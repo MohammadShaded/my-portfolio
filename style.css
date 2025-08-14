@@ -136,6 +136,8 @@ nav ul li a {
 
 .intro-section .intro-arrow span {
     width: max-content;
+    padding: 10px;
+    padding-left: 5px;
 }
 
 
@@ -159,6 +161,7 @@ nav ul li a {
     color: #fff;
     max-width: 35vw;
 }
+
 .hero-text h1 span {
     color: #b366ff;
 }
@@ -167,11 +170,92 @@ nav ul li a {
     color: #bbb;
     font-size: smaller;
     margin-top: 10px;
-    max-width: 600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .hero-text p.note {
-white-space: normal;
+    white-space: normal;
+}
+
+/* ----- Media Queries for Responsiveness ----- */
+
+@media (max-width: 1024px) {
+
+    .intro-section {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+
+
+    .hero-text h1 {
+        max-width: 60vw;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .intro-section {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .hero img {
+        width: 120px;
+    }
+
+    svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .intro-section .intro-arrow span {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-left: 50px;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        width: 100px;
+    }
+
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .intro-section .intro-arrow span {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-left: 45px;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+    .hero-text p {
+        font-size: x-small;
+    }
+
 }
