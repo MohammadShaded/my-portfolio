@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pVkaH5zN8E+FZ36gHv6qcv13eZxYQZdeOVv0s5uMd87CgiD/34peXtRaUy4ILCdCc6v5KiPZ7IY8bG+MZU7BA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://kit.fontawesome.com/8b4fe3a9b2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,18 +15,17 @@
         <nav>
             <div class="logo">Σ</div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Lab</a></li>
+                <li><a href="#"><i class="fa-regular fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#"><i class="fa-solid fa-flask"></i> Lab</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
 
-
             <!-- Intro Section -->
-            <div class="intro-section">
+            <section class="intro-section container">
                 <!-- Avatar -->
                 <div class="avatar-wrapper">
                     <img src="avatar.png" alt="My Photo" class="avatar" />
@@ -56,19 +52,19 @@
                         excellence.</p>
                 </div>
 
-            </div>
+            </section>
+
+            <!-- About Summary Section -->
+            <section class="about-summary container">
+                <h2>I’m <span>A Computer Engineer </span>.</h2>
+                <p>Currently focused on <strong>Frontend Development</strong> and creating smooth, user-friendly
+                    interfaces.</p>
+                <p>  Designing interactive web apps with a focus on smooth, user-friendly experiences, while exploring hardware projects like <em>Arduino-based systems</em> as part of continuous learning.</p>
+            </section>
 
         </section>
 
 
-
-
-
-        <h2>I’m <span>A Computer Engineer </span>.</h2>
-        <p>Currently focused on <strong>Frontend Development</strong> and creating smooth, user-friendly interfaces.
-        </p>
-        <p>I enjoy working on <em>creative tech projects</em>, from web apps to hardware integrations, and I’m
-            always learning something new to stay ahead.</p>
         </section>
 
     </main>
@@ -76,7 +72,7 @@
 
 
 
-    <section id="about">
+    <!-- <section id="about">
         <h2>About Me</h2>
         <p>Hello! I'm a web developer passionate about building clean and responsive websites.</p>
     </section>
@@ -107,7 +103,7 @@
     <footer>
         <p>&copy; 2025 My Portfolio</p>
     </footer>
-    
+     -->
 </body>
 
 </html>
