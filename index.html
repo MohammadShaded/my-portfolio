@@ -13,24 +13,28 @@
     <header>
 
         <nav>
-            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="logo"><img src="logo.png" alt="Mohammad's Logo"></div>
             <ul>
-                <li><a href="#"><i class="fa-regular fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa-solid fa-flask"></i> Lab</a></li>
+                <li><a href="#intro"><i class="fa-regular fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-flask"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
 
-            <!-- Intro Section -->
-            <section class="intro-section container">
-                <!-- Avatar -->
+            <div class="floating-logo-container">
+                <img src="logo.png" alt="Floating Logo">
+            </div>
+
+            <section id="intro" class="intro-section container">
                 <div class="avatar-wrapper">
                     <img src="avatar.png" alt="My Photo" class="avatar" />
                 </div>
-                <!-- Arrow + greeting -->
                 <div class="intro-arrow">
                     <svg width="80" height="80" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5,10 C50,10 100,10 145,60" stroke="#b366ff" stroke-width="2" fill="none"
@@ -44,7 +48,6 @@
                     <span class="greeting">Hello! I am <strong>Mohammad Shadid</strong></span>
 
                 </div>
-                <!-- Hero Text -->
                 <div class="hero-text">
                     <p class="intro"><u> A Developer who </u></p>
                     <h1>can’t resist making things look <span>good</span> ...</h1>
@@ -54,56 +57,153 @@
 
             </section>
 
-            <!-- About Summary Section -->
-            <section class="about-summary container">
+            <section id="about" class="about-summary container">
                 <h2>I’m <span>A Computer Engineer </span>.</h2>
                 <p>Currently focused on <strong>Frontend Development</strong> and creating smooth, user-friendly
                     interfaces.</p>
-                <p>  Designing interactive web apps with a focus on smooth, user-friendly experiences, while exploring hardware projects like <em>Arduino-based systems</em> as part of continuous learning.</p>
+                <p> Designing interactive web apps with a focus on smooth, user-friendly experiences, while exploring
+                    hardware projects like <em>Arduino-based systems</em> as part of continuous learning.</p>
             </section>
 
         </section>
 
+        <div class="decorative-line"></div>
 
+
+        <section id="experience" class="container">
+            <h2>My Professional <span>Experience</span></h2>
+            <div class="experience-item">
+                <h3>Frontend Intern</h3>
+                <h4>Foothill Technology Solutions</h4>
+                <p class="duration">July 2025 – Present</p>
+                <ul>
+                    <li>Hands-on Tasks: Completing practical assignments for each topic to solidify theoretical
+                        understanding.</li>
+                    <li>Collaborating with a team of developers to build and maintain web applications.</li>
+                    <li>Final Project: Working towards a final project at the end of the internship to apply all learned
+                        skills in a real-world context.</li>
+
+                </ul>
+            </div>
         </section>
+        <div class="decorative-line reverse"></div>
 
-    </main>
+        <section id="projects" class="container">
+            <h2>My Creative Lab <span>Projects</span></h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>MegaStore</h3>
+                        <p>Desktop application built using <strong>Java</strong> and <strong>JavaFX</strong> with
+                            <strong>PostgreSQL</strong> to manage inventory, sales, and customer records for a wholesale
+                            store.
+                        </p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">View Live <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/MohammadShaded/MegaStore-Database-Project" target="_blank"
+                            class="btn-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>EventPlanner</h3>
+                        <p>A command-line desktop application developed in <strong>Java</strong> using
+                            <strong>Behavior-Driven Development (BDD)</strong> principles with <strong>Gherkin
+                                language</strong> and unit testing.
+                        </p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>BDD</span>
+                            <span>Gherkin</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">View Live <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/MohammadShaded/Event-Planner-System" target="_blank"
+                            class="btn-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>RentItOut</h3>
+                        <p>Rental platform backend using <strong>Node.js</strong> following the Model-Route-Controller
+                            architecture. Designed RESTful APIs, integrated <strong>AWS RDS</strong> with
+                            <strong>MySQL</strong> and <strong>JWT</strong> for authentication.
+                        </p>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MySQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">View Live <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/MohammadShaded/RentItOut" target="_blank" class="btn-github"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Village Management System</h3>
+                        <p>A full-stack system managing village data. Features include real-time chat with
+                            <strong>WebSockets</strong>, secure authentication with <strong>JWT</strong>, and
+                            <strong>GraphQL</strong> integration using <strong>Apollo Server/Client</strong>.
+                        </p>
+                        <div class="tags">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>GraphQL</span>
+                            <span>WebSockets</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">View Live <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/MohammadShaded/village-management-system-Backend" target="_blank"
+                            class="btn-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Sakani (In Progress)</h3>
+                        <p>A full-stack platform to streamline rental property listing and booking. The backend is built
+                            with <strong>Node.js</strong> and <strong>Express</strong>, with a frontend in
+                            <strong>React</strong>.
+                        </p>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>React</span>
+                            <span>React Native</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">View Live <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/MohammadShaded/Sakani-backend" target="_blank" class="btn-github"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="decorative-line"></div>
 
 
 
-
-    <!-- <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer passionate about building clean and responsive websites.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>P</li>
-            <li>P</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><i class="fa-brands fa-html5" style="color:#e44d26;"></i> HTML5</li>
-            <li><i class="fa-brands fa-css3-alt" style="color:#2965f1;"></i> CSS3</li>
-            <li><i class="fa-brands fa-js" style="color:#f0db4f;"></i> JavaScript</li>
-        </ul>
-    </section>
-
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: mohammadshadid03@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 My Portfolio</p>
-    </footer>
-     -->
 </body>
 
 </html>
